@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AppMaui.ViewModel"
+             x:DataType="viewmodel:DrinkDetailsViewModel"
+             x:Class="AppMaui.View.DrinkDetailsPage"
+             Title="Details Drink">
+    <ScrollView>
+        <Grid RowDefinitions="Auto, Auto, *">
+            <BoxView Color="{StaticResource Primary}" 
+                     Grid.RowSpan="2" 
+                     HorizontalOptions="Fill" 
+                     VerticalOptions="Fill" 
+                     />
+            
+            <Border StrokeShape="RoundRectangle 80" 
+                    Stroke="White" 
+                    StrokeThickness="6" 
+                    HeightRequest="160" 
+                    WidthRequest="160"
+                    Margin="0,8,0,0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    >
+                <Image Aspect="AspectFill" 
+                           HeightRequest="160"
+                           WidthRequest="160"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Source="{Binding SelectedDrink.Thumbnail}"/>
+            </Border>
+            <Label Grid.Row="1"
+                   Text="{Binding SelectedDrink.Name}"
+                   TextColor="White"
+                   Padding="10"/>
+            <VerticalStackLayout Grid.Row="2"
+                                 Padding="10"
+                                 Spacing="10">
+                <Label Text="{Binding SelectedDrink.Category} "/>
+                <Label Text="{Binding SelectedDrink.Glass} "/>
+                <Label Text="{Binding SelectedDrink.Instructions} "/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

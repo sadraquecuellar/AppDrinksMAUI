@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppMaui</name>
+    </assembly>
+    <members>
+        <member name="T:AppMaui.ViewModel.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppMaui.ViewModel.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:AppMaui.ViewModel.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:AppMaui.ViewModel.BaseViewModel.Title">
+            <inheritdoc cref="F:AppMaui.ViewModel.BaseViewModel.title"/>
+        </member>
+        <member name="T:AppMaui.ViewModel.DrinkDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppMaui.ViewModel.DrinkDetailsViewModel.SelectedDrink">
+            <inheritdoc cref="F:AppMaui.ViewModel.DrinkDetailsViewModel.selectedDrink"/>
+        </member>
+        <member name="T:AppMaui.ViewModel.DrinksViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppMaui.ViewModel.DrinksViewModel.IsRefreshing">
+            <inheritdoc cref="F:AppMaui.ViewModel.DrinksViewModel.isRefreshing"/>
+        </member>
+        <member name="F:AppMaui.ViewModel.DrinksViewModel.getDrinksCommand">
+            <summary>The backing field for <see cref="P:AppMaui.ViewModel.DrinksViewModel.GetDrinksCommand"/>.</summary>
+        </member>
+        <member name="P:AppMaui.ViewModel.DrinksViewModel.GetDrinksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppMaui.ViewModel.DrinksViewModel.GetDrinksAsync"/>.</summary>
+        </member>
+        <member name="F:AppMaui.ViewModel.DrinksViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:AppMaui.ViewModel.DrinksViewModel.GoToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:AppMaui.ViewModel.DrinksViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:AppMaui.ViewModel.DrinksViewModel.GoToDetails(AppMaui.Model.Drink)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedDrink">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedDrink" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedDrink">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedDrink" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+    </members>
+</doc>

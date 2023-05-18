@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMaui.View.MainPage"
+             xmlns:model="clr-namespace:AppMaui.Model"
+             xmlns:viewmodel="clr-namespace:AppMaui.ViewModel"
+             x:DataType="viewmodel:DrinksViewModel"
+             Title="Drinks">
+
+    <RefreshView Command="{Binding GetDrinksCommand}" IsRefreshing="{Binding IsRefreshing}" >
+        <ContentView>
+            <CollectionView ItemsSource="{Binding Drinks}" SelectionMode="None" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Drink">
+                        <Frame HeightRequest="125" Margin="10" Padding="10" >
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DrinksViewModel}}, Path=GoToDetailsCommand}"
+                                                      CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <Grid ColumnDefinitions="125,*" Padding="0">
+                                <Image Aspect="AspectFill" HeightRequest="125" Source="{Binding Thumbnail}"/>
+                                <VerticalStackLayout Grid.Column="1" Padding="10">
+                                    <Label Text="{Binding Name}" Style="{StaticResource DrinkTitle}"/>
+                                    <Label Text="{Binding Glass}"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ContentView>
+    </RefreshView>
+    
+    
+</ContentPage>
